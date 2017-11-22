@@ -32,7 +32,7 @@ Here is a diagram describing how this works and how does it survive the System o
 - [Dagger 2.12]
 - [Retrofit/OkHTTP]
 - [ButterKnife]
-- [HummerCast]
+- [Hamcrest]
 - [Stetho]
 - [Leakcanary]
 - [Recyclerview/Cardview]
