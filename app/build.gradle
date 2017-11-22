@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "ahmed.com.mvp_rx_viewmodel"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+
+    implementation supportDependencies.constraintLayout
+
+    compile supportDependencies.design
+    compile supportDependencies.appcompat
+    compile supportDependencies.cardview
+    compile supportDependencies.recyclerview
+
+    // Lifecycle arch
+    compile GoogleLifeArchDependancies.runtime
+    compile GoogleLifeArchDependancies.extension
+    annotationProcessor GoogleLifeArchDependancies.compiler
+
+    // Room
+    compile RoomDependancies.runtime
+    compile RoomDependancies.rxAdapter
+    annotationProcessor RoomDependancies.compiler
+
+    // Retrofit & OkHttp
+    compile squareDependencies.retrofit
+    compile squareDependencies.adapter_rx_java
+    compile squareDependencies.converter_gson
+    compile squareDependencies.okHttp
+    compile squareDependencies.okHttpLoging
+
+    // Timber
+    compile timberDependencies.timber
+
+    // ButterKnife
+    compile butterKnifeDependacies.butterKnife
+    annotationProcessor butterKnifeDependacies.butterKnifeCompiler
+
+    // Dagger
+    compile injectionDependencies.dagger2
+    compile injectionDependencies.dagger2Android
+    compile injectionDependencies.dagger2AndroidSupport
+    annotationProcessor injectionDependencies.dagger2Compiler
+    annotationProcessor injectionDependencies.daggerAndroidProcessor
+    provided injectionDependencies.glassfish
+
+    // RxJava
+    compile reactiveDependencies.rxandroid
+    compile reactiveDependencies.rxjava
+
+    // Unit Test
+    testCompile testingDependencies.junit
+    testCompile testingDependencies.mockito
+    testCompile testingDependencies.robolectric
+    testCompile testingDependencies.hamcrest
+
+    // Developer tools
+    compile developerDependancies.stetho
+    compile developerDependancies.stethoOkHttp
+    debugCompile developerDependancies.leakCanaryDebug
+    releaseCompile developerDependancies.leakCanaryDebug
+    testCompile developerDependancies.leakCanaryTest
+}
