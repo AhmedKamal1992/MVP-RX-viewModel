@@ -38,4 +38,4 @@ Here is a diagram describing how this works and how does it survive the System o
 - [Recyclerview/Cardview]
 
 # Of course any kind of contribution is welcomed 
-especially that i feel that the code can better.
+## especially that i feel that the code can better.
