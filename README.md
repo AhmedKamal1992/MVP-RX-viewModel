@@ -24,15 +24,17 @@ Here is a diagram describing how this works and how does it survive the System o
 
 ![alt text](https://i.imgur.com/MgZGe2a.png)
 
-#- [Google Architecture Components (viewModel , liveData)]
-#- [RxJava/RxAndroid/RxRelay/Lambda]
-#- [Room for Presisting data]
-#- [Dagger 2.12]
-#- [Retrofit/OkHTTP]
-#- [ButterKnife]
-#- [HummerCast]
-#- [Stetho]
-#- [Leakcanary]
-#- [Recyclerview/Cardview]
+# The sample is using the following libraries :
+
+# - [Google Architecture Components (viewModel , liveData)]
+# - [RxJava/RxAndroid/RxRelay/Lambda]
+# - [Room for Presisting data]
+# - [Dagger 2.12]
+# - [Retrofit/OkHTTP]
+# - [ButterKnife]
+# - [HummerCast]
+# - [Stetho]
+# - [Leakcanary]
+# - [Recyclerview/Cardview]
 
 of course any kind of contribution is welcomed especially that i feel that the code can better.
