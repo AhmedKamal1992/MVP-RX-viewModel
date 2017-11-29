@@ -13,7 +13,7 @@ ext {
 
   ]
 
-  GoogleLifeCycleVersion = '1.0.0-beta2'
+  GoogleLifeCycleVersion = '1.0.0'
 
   GoogleLifeArchDependancies = [
 

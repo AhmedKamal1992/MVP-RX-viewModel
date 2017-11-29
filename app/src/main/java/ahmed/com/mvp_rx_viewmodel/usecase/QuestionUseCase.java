@@ -32,8 +32,8 @@ public class QuestionUseCase implements QuestionDataSource
         caches = new ArrayList<>();
     }
 
-    @Override public Flowable<List<Question>> loadQuestions(boolean forceRemote) {
-        if (forceRemote) {
+    @Override public Flowable<List<Question>> loadQuestions(boolean isRemote) {
+        if (isRemote) {
             return refreshData();
         } else {
             if (caches.size() > 0) {

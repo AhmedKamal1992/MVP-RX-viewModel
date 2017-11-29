@@ -60,7 +60,6 @@ public class QuestionsPresenter implements QuestionsContract.Presenter , Lifecyc
     public void onDetech()
     {
         disposable.clear();
-        disposable.dispose();
     }
 
     @Override
